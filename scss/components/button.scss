@@ -1,0 +1,18 @@
+@use '../base/variables' as *;
+
+// Componente de botones reutilizable
+.btn {
+  background: linear-gradient(to bottom, $primary-color, darken($primary-color, 10%)); /* Rojo degradado */
+  color: $footer-text-color; /* Texto blanco */
+  border: none;
+  padding: 10px 20px; /* Botones más grandes */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, darken($primary-color, 10%), darken($primary-color, 20%)); /* Más oscuro al pasar el cursor */
+}
