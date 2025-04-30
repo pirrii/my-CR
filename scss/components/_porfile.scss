@@ -1,0 +1,7 @@
+.profile-photo {
+  max-width: 150px; /* Tamaño máximo */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: $box-shadow; /* Sombra definida en variables */
+  margin: $padding-base auto; /* Centrado */
+  display: block; /* Asegura que se comporte como un bloque */
+}
