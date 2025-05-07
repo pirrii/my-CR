@@ -1,0 +1,35 @@
+@use '../base/variables' as variables;
+
+.footer {
+  background-color: variables.$accent-color; // Fondo oscuro
+  color: variables.$footer-text-color; // Texto claro
+  padding: variables.$padding-large; // Espaciado interno
+  text-align: center; // Centra el contenido
+  font-size: 1rem; // Tamaño de fuente base
+  border-top: 3px solid variables.$primary-color; // Línea superior decorativa
+
+  .footer-links {
+    margin: variables.$padding-base 0; // Espaciado superior e inferior
+    display: flex;
+    justify-content: center; // Centra los enlaces
+    gap: variables.$padding-base; // Espaciado entre enlaces
+
+    a {
+      color: variables.$footer-text-color; // Color del texto del enlace
+      text-decoration: none; // Sin subrayado
+      font-weight: bold; // Negrita para destacar
+      transition: color 0.3s ease; // Transición suave al pasar el cursor
+
+      &:hover {
+        color: variables.$primary-color; // Cambia el color al pasar el cursor
+      }
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: variables.$padding-small; // Espaciado superior
+    font-size: 0.9rem; // Tamaño de fuente más pequeño
+    color: variables.$footer-text-color; // Color del texto
+  }
+}

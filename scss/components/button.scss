@@ -1,8 +1,13 @@
+@use 'sass:color'; // Importa las funciones de color modernas
 @use '../base/variables' as *;
 
 // Componente de botones reutilizable
 .btn {
-  background: linear-gradient(to bottom, $primary-color, darken($primary-color, 10%)); /* Rojo degradado */
+  background: linear-gradient(
+    to bottom,
+    $primary-color,
+    color.scale($primary-color, $lightness: -10%) // Ajusta la luminosidad
+  ); /* Rojo degradado */
   color: $footer-text-color; /* Texto blanco */
   border: none;
   padding: 10px 20px; /* Botones más grandes */
@@ -14,5 +19,9 @@
 }
 
 .btn:hover {
-  background: linear-gradient(to bottom, darken($primary-color, 10%), darken($primary-color, 20%)); /* Más oscuro al pasar el cursor */
+  background: linear-gradient(
+    to bottom,
+    color.scale($primary-color, $lightness: -10%), // Ajusta la luminosidad
+    color.scale($primary-color, $lightness: -20%) // Más oscuro al pasar el cursor
+  );
 }

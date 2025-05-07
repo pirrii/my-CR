@@ -1,7 +1,15 @@
+@use '../base/variables' as *; // Importa variables de SCSS
 .profile-photo {
   max-width: 150px; /* Tamaño máximo */
   border-radius: 50%; /* Forma circular */
   box-shadow: $box-shadow; /* Sombra definida en variables */
   margin: $padding-base auto; /* Centrado */
   display: block; /* Asegura que se comporte como un bloque */
+  border: 3px solid $primary-color; /* Borde de color principal */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.profile-photo:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }

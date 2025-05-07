@@ -2,12 +2,15 @@
 @use '../components/button';
 
 .header {
-  background: variables.$primary-color;
-  color: #fff;
-  padding: 50px 20px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0; /* Alinea el header al borde superior */
+  left: 0; /* Alinea el header al borde izquierdo */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  background-color: variables.$primary-color; /* Color de fondo */
+  color: variables.$footer-text-color; /* Color del texto */
+  padding: variables.$padding-base; /* Espaciado interno */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  box-shadow: variables.$box-shadow; /* Sombra para destacar el header */
 
   h1 {
     font-size: 2.5rem;
@@ -82,4 +85,8 @@
 
 .nav-bar .btn {
   @extend .btn; /* Usa el componente de botones */
+}
+
+.main-content {
+  padding-top: 80px; /* Añade un margen superior para evitar que el contenido quede oculto detrás del header */
 }

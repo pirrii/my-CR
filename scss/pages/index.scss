@@ -1,26 +1,67 @@
 @use '../base/variables' as variables;
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color:  variables.$colorfondo; /* Fondo oscuro */
+  color: variables.$text-color; /* Texto claro */
+  font-family: variables.$font-family;
+}
+
+// Estilos globales para encabezados y párrafos
+h1, h2, h3 {
+  font-family: variables.$font-family; // Fuente principal
+  margin: variables.$padding-base 0; // Espaciado vertical
+  text-align: center; // Centrado
+  line-height: 1.4; // Altura de línea para mejor legibilidad
+}
+
+h1 {
+  font-size: 3rem; // Tamaño grande para títulos principales
+  color: variables.$primary-color; // Color principal
+  font-weight: bold; // Negrita para destacar
+}
+
+h2 {
+  font-size: 2.5rem; // Tamaño mediano para subtítulos
+  color: variables.$secondary-color; // Color secundario
+  font-weight: 600; // Peso medio
+}
+
+h3 {
+  font-size: 2rem; // Tamaño pequeño para encabezados secundarios
+  color: variables.$primary-color; // Color principal
+  font-weight: 500; // Peso medio
+}
+
+p {
+  line-height: 1.8; // Altura de línea para mejor legibilidad
+  color: variables.$text-color; // Color del texto
+  margin: 0 0 variables.$padding-base 0; // Espaciado inferior
+  text-align: justify center; // Justifica el texto para una apariencia más elegante
+  max-width: 800px; // Ancho máximo para evitar líneas demasiado largas
+}
+
 .index {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: variables.$colorfondo;
+  border-radius: variables.$border-radius;
+  box-shadow: variables.$box-shadow;
 }
 
 .about {
-  background-color: #f9f9f9;
-  padding: 50px 20px;
+  background-color: variables.$secondary-color;
+  padding: variables.$padding-large variables.$padding-base;
 }
 
 .about .highlight {
-  color: #ff758c;
+  color: variables.$primary-color;
 }
 
 .about-content {
   display: flex;
-  gap: 20px;
+  gap: variables.$padding-large;
 }
 
 .about-text {
@@ -33,12 +74,11 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.main-content {
+main {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-between; /* Espaciado uniforme entre los elementos */
-  gap: 50px; /* Espaciado entre la imagen y el texto */
-  padding: 60px 20px; /* Espaciado interno */
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  padding: variables.$padding-base;
 }
 
 .image-section {
@@ -61,24 +101,6 @@
   gap: 20px; /* Espaciado entre los elementos de texto */
 }
 
-.text-section h2 {
-  font-size: 2.5rem; /* Tamaño del título principal */
-  color: #333;
-  margin: 0;
-}
-
-.text-section h3 {
-  font-size: 1.8rem; /* Tamaño del subtítulo */
-  color: #b22222;
-  margin: 0;
-}
-
-.text-section p {
-  font-size: 1.2rem; /* Tamaño del texto descriptivo */
-  line-height: 1.8; /* Espaciado entre líneas */
-  color: #555;
-}
-
 .text-section .btn {
   align-self: flex-start; /* Alinea el botón al inicio del texto */
   padding: 12px 25px; /* Tamaño del botón */
@@ -95,145 +117,80 @@
   background-color: #8b0000; /* Color más oscuro al pasar el cursor */
 }
 
-.profile-card {
-  max-width: 900px;
-  margin: 50px auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.skills {
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: variables.$primary-color;
+    margin-bottom: variables.$padding-large;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: variables.$primary-color;
+      margin: variables.$padding-small auto 0;
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+    gap: variables.$padding-base; /* Espaciado entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+  }
+
+  .card {
+    flex: 1 1 calc(30% - variables.$padding-base); /* Ocupa el 30% del ancho menos el espacio entre tarjetas */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: variables.$border-radius;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: variables.$padding-base;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+      background-color: rgba(241, 74, 74, 0.1); /* Fondo rojizo al pasar el cursor */
+    }
+
+    i {
+      font-size: 2rem;
+      color: variables.$primary-color;
+      margin-bottom: variables.$padding-small;
+    }
+
+    strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: variables.$padding-small;
+      color: variables.$primary-color;
+    }
+
+    p {
+      font-size: 1rem;
+      color: variables.$text-color;
+      margin: 0;
+    }
+  }
 }
 
-.profile-header {
-  text-align: center;
-  padding: 20px;
-  background-color: #f5f5f5;
+.multicolumna {
+  columns: 2; // Divide la lista en 2 columnas
+  list-style-position: inside; // Asegura que los marcadores estén dentro del contenido
+  gap: variables.$padding-base; // Espaciado entre columnas
+  padding: 0; // Elimina el padding por defecto
+  margin: variables.$padding-base 0; // Espaciado superior e inferior
 }
 
-.profile-header .badge {
-  display: inline-block;
-  background-color: #ff6b6b;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: bold;
+.multicolumna li {
+  margin-bottom: variables.$padding-small; // Espaciado entre elementos de la lista
 }
 
-.profile-header .name {
-  color: #333;
-  font-weight: bold;
-}
-
-.profile-content {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-}
-
-.profile-image img {
-  max-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile-info {
-  flex: 1;
-}
-
-.profile-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
-}
-
-.profile-info ul li {
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-}
-
-.profile-info .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff6b6b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.profile-footer {
-  background-color: variables.$footer-bg-color;
-  padding: 10px;
-  text-align: center;
-  color: variables.$footer-text-color;
-}
-
-.profile-footer .social-icons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.profile-footer .social-icons li a {
-  color: variables.$footer-text-color;
-  font-size: 1.2rem;
-}
-
-.profile-summary, .contact-info, .work-experience, .education, .skills, .portfolio, .certifications, .languages, .references {
-  margin: 20px 0;
-  padding: 20px;
-  background-color: variables.$secondary-color;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: variables.$text-color;
-}
-
-.profile-summary h3, .contact-info h3, .work-experience h3, .education h3, .skills h3, .portfolio h3, .certifications h3, .languages h3, .references h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.profile-summary p, .contact-info ul, .work-experience ul, .education ul, .skills ul, .portfolio ul, .certifications ul, .languages ul, .references p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-.contact-info ul, .work-experience ul, .education ul, .skills ul, .portfolio ul, .certifications ul, .languages ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-info ul li, .work-experience ul li, .education ul li, .skills ul li, .portfolio ul li, .certifications ul li, .languages ul li {
-  margin-bottom: 10px;
-}
-
-.profile-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.profile-footer .social-icons {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.profile-footer .social-icons li a {
-  color: #fff;
-  font-size: 1.2rem;
-  text-decoration: none;
+section, article {
+  margin-bottom: variables.$padding-large; /* Espaciado inferior entre secciones */
 }

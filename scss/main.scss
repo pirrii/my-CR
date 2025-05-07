@@ -1,5 +1,6 @@
-@use 'base/reset';
 @use 'base/variables';
 @use 'components/header';
-@use 'components/profile';
+@use 'components/_porfile';
 @use 'pages/index';
+@use 'components/button';
+@use 'components/footer';

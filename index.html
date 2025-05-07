@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,79 +15,115 @@
     <header class="main-header">
         <nav class="nav-bar">
             <ul>
-                <li><button class="btn">Currículum</button></li>
-                <li><button class="btn">Portafolio</button></li>
+                <li><a href="#curriculum" class="btn">Currículum</a></li>
+                <li><a href="#portfolio" class="btn">Portafolio</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="profile-card">
-        <header class="profile-header">
-            <span class="badge">HELLO</span>
-            <h1>I’m <span class="name">Camilo Aldana</span></h1>
-            <h2>Software Engineering Student</h2>
-        </header>
+    <main>
+        
+            <header class="profile-header">
+                <h1>I’m <span id="titulo" class="name">Camilo Aldana</span></h1>
+                <h2>Software Engineering Student</h2>
+            </header>
 
-        <img src="images/fotoperfil.jpg" alt="Foto de perfil de Camilo Aldana" class="profile-photo">
+            <img src="images/fotoperfil.jpg" alt="Foto de perfil de Camilo Aldana, estudiante de Ingeniería de Software" class="profile-photo">
 
-        <section class="profile-summary">
-            <h3>Descripción</h3>
-            <p>Software Engineering student at Universidad Manuela Beltrán, with a focus on innovation and continuous professional improvement. I have a solid theoretical and practical foundation in web development using technologies such as HTML, CSS, JavaScript, object-oriented languages like Java, and database management with SQL and NoSQL. Experienced in working with methodologies like SCRUM and adapting to different environments.</p>
-        </section>
+            <section class="profile-summary">
+                <h2>Descripción</h2>
+                <p>Software Engineering student at Universidad Manuela Beltrán, with a focus on
+                    innovation and continuous professional improvement. I have a solid theoretical and
+                    practical foundation in web development using technologies such as HTML, CSS,
+                    JavaScript, object-oriented languages like Java, and database management with SQL
+                    and NoSQL. Experienced in working with methodologies like SCRUM and adapting to
+                    different environments.
+                    .</p>
+            </section>
 
-        <section class="contact-info">
-            <h3>Información de Contacto</h3>
-            <ul>
-                <li><strong>Teléfono:</strong> (+57) 3507468911</li>
-                <li><strong>Email:</strong> juanquinones.ca@gmail.com</li>
-            </ul>
-        </section>
+            <section class="contact-info">
+                <h3>Información de Contacto</h3>
+                <address>
+                    <p><i class="fas fa-phone-alt"></i> Teléfono:(+57) 3507468911</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:juanquinones.ca@gmail.com">juanquinones.ca@gmail.com</a></p>
+                </address>
+            </section>
 
-        <section class="education">
-            <h3>Formación Académica</h3>
-            <ul>
-                <li><strong>Bachelor of Software Engineering</strong> (in progress) - Universidad Manuela Beltrán</li>
-            </ul>
-        </section>
+            <section class="education">
+                <h2>Formación Académica</h2>
+                <ul>
+                    <p>Bachelor of Software Engineering (in progress) - Universidad Manuela Beltrán</p>
+                </ul>
+            </section>
 
-        <section class="certifications">
-            <h3>Certificaciones</h3>
-            <ul>
-                <li><strong>CCNAv7:</strong> Switching, Routing and Wireless Essentials</li>
-                <li><strong>NDG Linux Unhatched</strong></li>
-                <li><strong>Introduction to Cybersecurity</strong></li>
-                <li><strong>Scrum Fundamentals Certified</strong></li>
-                <li><strong>Python Essentials I</strong></li>
-            </ul>
-        </section>
+            <article class="certifications">
+                <h2>Certificaciones</h2>
+                <ul class="multicolumna">
+                    <li>CCNAv7: Switching, Routing and Wireless Essentials</li>
+                    <li>NDG Linux Unhatched</li>
+                    <li>Introduction to Cybersecurity</li>
+                    <li>Python Essentials I</li>
+                    <li>Scrum Fundamentals Certified</li>
+                </ul>
+            </article>
 
-        <section class="skills">
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-                <li><strong>Lenguajes de Programación:</strong> Java, JavaScript, Python</li>
-                <li><strong>Desarrollo Web:</strong> HTML, CSS, Django</li>
-                <li><strong>Gestión de Bases de Datos:</strong> SQL, NoSQL (MongoDB, Firebase)</li>
-                <li><strong>Control de Versiones:</strong> Git</li>
-                <li><strong>Infraestructura de Redes:</strong> Protocolos de seguridad de redes, manejo básico de Azure</li>
-                <li><strong>Redes:</strong> Switcheo y enrutamiento de redes</li>
-            </ul>
-        </section>
+            <section class="skills">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skills-container">
+                    <div class="card">
+                        <i class="fas fa-code"></i>
+                        <strong>Lenguajes de Programación:</strong>
+                        <p>Java, JavaScript, Python</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-laptop-code"></i>
+                        <strong>Desarrollo Web:</strong>
+                        <p>HTML, CSS, Django</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-database"></i>
+                        <strong>Gestión de Bases de Datos:</strong>
+                        <p>SQL, NoSQL (MongoDB, Firebase)</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-code-branch"></i>
+                        <strong>Control de Versiones:</strong>
+                        <p>Git</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-network-wired"></i>
+                        <strong>Infraestructura de Redes:</strong>
+                        <p>Protocolos de seguridad de redes, manejo básico de Azure</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-sitemap"></i>
+                        <strong>Redes:</strong>
+                        <p>Switcheo y enrutamiento de redes</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="languages">
-            <h3>Idiomas</h3>
-            <ul>
-                <li><strong>Español:</strong> Nativo</li>
-                <li><strong>Inglés:</strong> Básico</li>
-            </ul>
-        </section>
-    </div>
+            <section class="languages">
+                <h3>Idiomas</h3>
+                    <p>Español:Nativo</p>
+                    <p>Inglés: Básico</p>            
+            </section>
+        
+    </main>
 
-    <footer class="profile-footer">
-        <ul class="social-icons">
-            <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn de Camilo Aldana"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com" target="_blank" aria-label="GitHub de Camilo Aldana"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Camilo Aldana"><i class="fab fa-instagram"></i></a></li>
-        </ul>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/juan-qui%C3%B1ones-aldana-b78727258/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/pirrii" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:juanquinones.ca@gmail.com" aria-label="Correo Electrónico">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-text">© 2025 Camilo Aldana. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

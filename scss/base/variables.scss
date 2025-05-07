@@ -1,22 +1,20 @@
-// Variables de colores
-$primary-color: #ff6b6b; // Color principal
-$secondary-color: #f9f9f9; // Color de fondo claro
-$text-color: #333; // Color del texto principal
-$accent-color: #555; // Color de texto secundario
-$footer-bg-color: #333; // Color de fondo del footer
-$footer-text-color: #fff; // Color del texto del footer
+// Colores
+$primary-color: #f14a4a; // Color principal (rojo)
+$secondary-color: #859D69; // Color secundario()
+$accent-color: #333; // Color de acento (gris oscuro)
+$text-color: #000; // Color del texto principal (negro)
+$footer-text-color: #cccccc; // Un gris claro
+$colorfondo: #FDF8F0;
 
-// Variables de fuente
+// Tipografía
 $font-family: 'Arial', sans-serif; // Fuente principal
-$font-size-base: 1rem; // Tamaño base de fuente
-$font-size-large: 1.5rem; // Tamaño grande de fuente
-$font-size-small: 0.875rem; // Tamaño pequeño de fuente
 
-// Variables de espaciado
-$padding-small: 5px;
-$padding-base: 10px;
-$padding-large: 20px;
 
-// Variables de bordes
-$border-radius: 5px; // Radio de bordes
-$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra de caja
+// Espaciado
+$padding-small: 8px; // Espaciado pequeño
+$padding-base: 16px; // Espaciado base
+$padding-large: 32px; // Espaciado grande
+
+// Bordes y sombras
+$border-radius: 5px; // Bordes redondeados
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra estándar
