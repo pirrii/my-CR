@@ -9,117 +9,117 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>Currículum de Camilo Aldana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Currículum de Camilo Aldana - Ingeniero de Software</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" itemscope itemtype="https://schema.org/Person">
         <nav class="nav-bar">
             <ul>
                 <li><a href="#curriculum" class="btn">Currículum</a></li>
                 <li><a href="#portfolio" class="btn">Portafolio</a></li>
             </ul>
         </nav>
+        <h1 itemprop="name">Camilo Aldana</h1>
+        <h2 itemprop="jobTitle">Ingeniero de Software</h2>
+        <img src="images/fotoperfil.jpg" alt="Foto de perfil de Camilo Aldana, estudiante de Ingeniería de Software" class="profile-photo" itemprop="image">
     </header>
 
     <main>
-        
-            <header class="profile-header">
-                <h1>I’m <span id="titulo" class="name">Camilo Aldana</span></h1>
-                <h2>Software Engineering Student</h2>
-            </header>
+        <section class="profile-summary" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2>Descripción</h2>
+            <p itemprop="description">Software Engineering student at Universidad Manuela Beltrán, with a focus on
+                innovation and continuous professional improvement. I have a solid theoretical and
+                practical foundation in web development using technologies such as HTML, CSS,
+                JavaScript, object-oriented languages like Java, and database management with SQL
+                and NoSQL. Experienced in working with methodologies like SCRUM and adapting to
+                different environments.</p>
+        </section>
 
-            <img src="images/fotoperfil.jpg" alt="Foto de perfil de Camilo Aldana, estudiante de Ingeniería de Software" class="profile-photo">
+        <section class="contact-info" itemscope itemtype="https://schema.org/ContactPoint">
+            <h3>Información de Contacto</h3>
+            <address>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: <span itemprop="telephone">(+57) 3507468911</span></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:juanquinones.ca@gmail.com" itemprop="email">juanquinones.ca@gmail.com</a></p>
+            </address>
+        </section>
 
-            <section class="profile-summary">
-                <h2>Descripción</h2>
-                <p>Software Engineering student at Universidad Manuela Beltrán, with a focus on
-                    innovation and continuous professional improvement. I have a solid theoretical and
-                    practical foundation in web development using technologies such as HTML, CSS,
-                    JavaScript, object-oriented languages like Java, and database management with SQL
-                    and NoSQL. Experienced in working with methodologies like SCRUM and adapting to
-                    different environments.
-                    .</p>
-            </section>
+        <section class="education" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>
+                    <span itemprop="name">Universidad Manuela Beltrán</span> -
+                    <span itemprop="description">Bachelor of Software Engineering (in progress)</span>
+                </li>
+            </ul>
+        </section>
 
-            <section class="contact-info">
-                <h3>Información de Contacto</h3>
-                <address>
-                    <p><i class="fas fa-phone-alt"></i> Teléfono:(+57) 3507468911</p>
-                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:juanquinones.ca@gmail.com">juanquinones.ca@gmail.com</a></p>
-                </address>
-            </section>
+        <article class="certifications">
+            <h2>Certificaciones</h2>
+            <ul class="multicolumna">
+                <li itemscope itemtype="https://schema.org/CreativeWork">
+                    <span itemprop="name">CCNAv7: Switching, Routing and Wireless Essentials</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/CreativeWork">
+                    <span itemprop="name">NDG Linux Unhatched</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/CreativeWork">
+                    <span itemprop="name">Introduction to Cybersecurity</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/CreativeWork">
+                    <span itemprop="name">Python Essentials I</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/CreativeWork">
+                    <span itemprop="name">Scrum Fundamentals Certified</span>
+                </li>
+            </ul>
+        </article>
 
-            <section class="education">
-                <h2>Formación Académica</h2>
-                <ul>
-                    <p>Bachelor of Software Engineering (in progress) - Universidad Manuela Beltrán</p>
-                </ul>
-            </section>
-
-            <article class="certifications">
-                <h2>Certificaciones</h2>
-                <ul class="multicolumna">
-                    <li>CCNAv7: Switching, Routing and Wireless Essentials</li>
-                    <li>NDG Linux Unhatched</li>
-                    <li>Introduction to Cybersecurity</li>
-                    <li>Python Essentials I</li>
-                    <li>Scrum Fundamentals Certified</li>
-                </ul>
-            </article>
-
-            <section class="skills">
-                <h3>Habilidades Técnicas</h3>
-                <div class="skills-container">
-                    <div class="card">
-                        <i class="fas fa-code"></i>
-                        <strong>Lenguajes de Programación:</strong>
-                        <p>Java, JavaScript, Python</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-laptop-code"></i>
-                        <strong>Desarrollo Web:</strong>
-                        <p>HTML, CSS, Django</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-database"></i>
-                        <strong>Gestión de Bases de Datos:</strong>
-                        <p>SQL, NoSQL (MongoDB, Firebase)</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-code-branch"></i>
-                        <strong>Control de Versiones:</strong>
-                        <p>Git</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-network-wired"></i>
-                        <strong>Infraestructura de Redes:</strong>
-                        <p>Protocolos de seguridad de redes, manejo básico de Azure</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-sitemap"></i>
-                        <strong>Redes:</strong>
-                        <p>Switcheo y enrutamiento de redes</p>
-                    </div>
+        <section class="skills">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-container">
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-code"></i>
+                    <strong itemprop="name">Lenguajes de Programación:</strong>
+                    <p itemprop="description">Java, JavaScript, Python</p>
                 </div>
-            </section>
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-laptop-code"></i>
+                    <strong itemprop="name">Desarrollo Web:</strong>
+                    <p itemprop="description">HTML, CSS, Django</p>
+                </div>
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-database"></i>
+                    <strong itemprop="name">Gestión de Bases de Datos:</strong>
+                    <p itemprop="description">SQL, NoSQL (MongoDB, Firebase)</p>
+                </div>
+            </div>
+        </section>
 
-            <section class="languages">
-                <h3>Idiomas</h3>
-                    <p>Español:Nativo</p>
-                    <p>Inglés: Básico</p>            
-            </section>
-        
+        <section class="languages">
+            <h3>Idiomas</h3>
+            <ul>
+                <li itemscope itemtype="https://schema.org/Language">
+                    <span itemprop="name">Español</span>: <span itemprop="proficiencyLevel">Nativo</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/Language">
+                    <span itemprop="name">Inglés</span>: <span itemprop="proficiencyLevel">Básico</span>
+                </li>
+            </ul>
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
         <div class="footer-links">
-            <a href="https://www.linkedin.com/in/juan-qui%C3%B1ones-aldana-b78727258/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/juan-qui%C3%B1ones-aldana-b78727258/" target="_blank" aria-label="LinkedIn" itemprop="sameAs">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/pirrii" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/pirrii" target="_blank" aria-label="GitHub" itemprop="sameAs">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="mailto:juanquinones.ca@gmail.com" aria-label="Correo Electrónico">
+            <a href="mailto:juanquinones.ca@gmail.com" aria-label="Correo Electrónico" itemprop="email">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>

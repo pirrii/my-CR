@@ -10,7 +10,7 @@ body {
 
 // Estilos globales para encabezados y párrafos
 h1, h2, h3 {
-  font-family: variables.$font-family; // Fuente principal
+  font-family: variables.$font-family_T; // Fuente principal
   margin: variables.$padding-base 0; // Espaciado vertical
   text-align: center; // Centrado
   line-height: 1.4; // Altura de línea para mejor legibilidad
