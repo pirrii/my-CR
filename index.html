@@ -9,26 +9,23 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Currículum de Camilo Aldana - Ingeniero de Software</title>
+    <title>Currículum de Camilo Aldana</title>
 </head>
 <body>
-    <header class="main-header" itemscope itemtype="https://schema.org/Person">
+    <header class="main-header" itemscope itemtype="https://schema.org/WPHeader">
         <nav class="nav-bar">
             <ul>
                 <li><a href="#curriculum" class="btn">Currículum</a></li>
                 <li><a href="#portfolio" class="btn">Portafolio</a></li>
             </ul>
         </nav>
+    </header>
+    <main>
+    <section class="profile" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="url" content="https://www.linkedin.com/in/juan-qui%C3%B1ones-aldana-b78727258/">
         <h1 itemprop="name">Camilo Aldana</h1>
         <h2 itemprop="jobTitle">Ingeniero de Software</h2>
         <img src="images/fotoperfil.jpg" alt="Foto de perfil de Camilo Aldana, estudiante de Ingeniería de Software" class="profile-photo" itemprop="image">
-    </header>
-
-    <main>
-        <section class="profile-summary" itemscope itemtype="https://schema.org/CreativeWork">
             <h2>Descripción</h2>
             <p itemprop="description">Software Engineering student at Universidad Manuela Beltrán, with a focus on
                 innovation and continuous professional improvement. I have a solid theoretical and
@@ -38,12 +35,16 @@
                 different environments.</p>
         </section>
 
-        <section class="contact-info" itemscope itemtype="https://schema.org/ContactPoint">
-            <h3>Información de Contacto</h3>
-            <address>
-                <p><i class="fas fa-phone-alt"></i> Teléfono: <span itemprop="telephone">(+57) 3507468911</span></p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:juanquinones.ca@gmail.com" itemprop="email">juanquinones.ca@gmail.com</a></p>
-            </address>
+        <section class="languages">
+            <h3>Idiomas</h3>
+            <ul>
+                <li itemscope itemtype="https://schema.org/Language">
+                    <span itemprop="name">Español</span>: <span itemprop="proficiencyLevel">Nativo</span>
+                </li>
+                <li itemscope itemtype="https://schema.org/Language">
+                    <span itemprop="name">Inglés</span>: <span itemprop="proficiencyLevel">Básico</span>
+                </li>
+            </ul>
         </section>
 
         <section class="education" itemscope itemtype="https://schema.org/EducationalOrganization">
@@ -52,6 +53,8 @@
                 <li>
                     <span itemprop="name">Universidad Manuela Beltrán</span> -
                     <span itemprop="description">Bachelor of Software Engineering (in progress)</span>
+                    <meta itemprop="address" content="Bogotá, Colombia">
+                    <meta itemprop="url" content="https://www.umb.edu.co">
                 </li>
             </ul>
         </section>
@@ -95,19 +98,33 @@
                     <strong itemprop="name">Gestión de Bases de Datos:</strong>
                     <p itemprop="description">SQL, NoSQL (MongoDB, Firebase)</p>
                 </div>
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-code-branch"></i>
+                    <strong itemprop="name">Control de Versiones:</strong>
+                    <p itemprop="description">Git</p>
+                </div>
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-network-wired"></i>
+                    <strong itemprop="name">Infraestructura de Redes:</strong>
+                    <p itemprop="description">Protocolos de seguridad de redes, manejo básico de Azure</p>
+                </div>
+                <div class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <i class="fas fa-sitemap"></i>
+                    <strong itemprop="name">Redes:</strong>
+                    <p itemprop="description">Switcheo y enrutamiento de redes</p>
+                </div>
             </div>
         </section>
 
-        <section class="languages">
-            <h3>Idiomas</h3>
-            <ul>
-                <li itemscope itemtype="https://schema.org/Language">
-                    <span itemprop="name">Español</span>: <span itemprop="proficiencyLevel">Nativo</span>
-                </li>
-                <li itemscope itemtype="https://schema.org/Language">
-                    <span itemprop="name">Inglés</span>: <span itemprop="proficiencyLevel">Básico</span>
-                </li>
-            </ul>
+        
+
+        <section class="contact-info" itemscope itemtype="https://schema.org/ContactPoint">
+            <meta itemprop="contactType" content="Personal">
+            <h3>Información de Contacto</h3>
+            <address>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: <span itemprop="telephone">(+57) 3507468911</span></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:juanquinones.ca@gmail.com" itemprop="email">juanquinones.ca@gmail.com</a></p>
+            </address>
         </section>
     </main>
 
@@ -123,7 +140,7 @@
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
-        <p class="footer-text">© 2025 Camilo Aldana. Todos los derechos reservados.</p>
+        <p class="footer-text" itemprop="copyrightHolder">© 2025 Camilo Aldana. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

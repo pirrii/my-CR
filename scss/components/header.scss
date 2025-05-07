@@ -11,6 +11,10 @@
   padding: variables.$padding-base; /* Espaciado interno */
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   box-shadow: variables.$box-shadow; /* Sombra para destacar el header */
+  display: flex; /* Asegura que los elementos dentro del header se alineen */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto */
 
   h1 {
     font-size: 2.5rem;
@@ -19,7 +23,7 @@
 
   h2 {
     font-size: 1.5rem;
-    margin: 0;
+    margin: variables.$padding-small 0; /* Espaciado superior e inferior */
   }
 }
 
