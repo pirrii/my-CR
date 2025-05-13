@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #FDF8F0; /* Fondo oscuro */
+  color: #000; /* Texto claro */
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Abril Fatface", serif;
+  margin: 16px 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f14a4a;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #859D69;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #f14a4a;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.8;
+  color: #000;
+  margin: 0 0 16px 0;
+  text-align: justify center;
+  max-width: 800px;
+}
+
+.index {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #FDF8F0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  padding: 16px;
+}
+
+.skills h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #f14a4a;
+  margin-bottom: 32px;
+  position: relative;
+}
+.skills h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f14a4a;
+  margin: 8px auto 0;
+}
+.skills .skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+  gap: 16px; /* Espaciado entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+.skills .card {
+  flex: 1 1 calc(30% - 16px); /* Ocupa el 30% del ancho menos el espacio entre tarjetas */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.skills .card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  background-color: rgba(241, 74, 74, 0.1); /* Fondo rojizo al pasar el cursor */
+}
+.skills .card i {
+  font-size: 2rem;
+  color: #f14a4a;
+  margin-bottom: 8px;
+}
+.skills .card strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #f14a4a;
+}
+.skills .card p {
+  font-size: 1rem;
+  color: #000;
+  margin: 0;
+}
+
+.multicolumna {
+  columns: 2;
+  list-style-position: inside;
+  gap: 16px;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.multicolumna li {
+  margin-bottom: 8px;
+}
+
+section, article {
+  margin-bottom: 32px; /* Espaciado inferior entre secciones */
+}
+
+/*# sourceMappingURL=index.css.map */

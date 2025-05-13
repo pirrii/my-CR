@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.btn {
+  background: linear-gradient(to bottom, #f14a4a, rgb(238.7384615385, 44.7615384615, 44.7615384615)); /* Rojo degradado */
+  color: #cccccc; /* Texto blanco */
+  border: none;
+  padding: 10px 20px; /* Botones más grandes */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, rgb(238.7384615385, 44.7615384615, 44.7615384615), rgb(233.9076923077, 18.0923076923, 18.0923076923));
+}
+
+/*# sourceMappingURL=button.css.map */

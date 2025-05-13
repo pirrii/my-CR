@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.btn, .header .btn, .nav-bar .btn {
+  background: linear-gradient(to bottom, #f14a4a, rgb(238.7384615385, 44.7615384615, 44.7615384615)); /* Rojo degradado */
+  color: #cccccc; /* Texto blanco */
+  border: none;
+  padding: 10px 20px; /* Botones más grandes */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, rgb(238.7384615385, 44.7615384615, 44.7615384615), rgb(233.9076923077, 18.0923076923, 18.0923076923));
+}
+
+.header {
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0; /* Alinea el header al borde superior */
+  left: 0; /* Alinea el header al borde izquierdo */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  background-color: #f14a4a; /* Color de fondo */
+  color: #cccccc; /* Color del texto */
+  padding: 16px; /* Espaciado interno */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
+  display: flex; /* Asegura que los elementos dentro del header se alineen */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto */
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.header h2 {
+  font-size: 1.5rem;
+  margin: 8px 0; /* Espaciado superior e inferior */
+}
+
+.header .btn {
+  /* Usa el componente de botones */
+}
+
+.main-header {
+  background-color: #f14a4a;
+  padding: 15px 20px; /* Más grueso */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin: 0;
+}
+
+.nav-bar .btn {
+  /* Usa el componente de botones */
+}
+
+.main-content {
+  padding-top: 80px; /* Añade un margen superior para evitar que el contenido quede oculto detrás del header */
+}
+
+/*# sourceMappingURL=header.css.map */

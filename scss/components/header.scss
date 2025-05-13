@@ -27,44 +27,11 @@
   }
 }
 
-.header .highlight {
-  color: #ffeb3b;
-}
 
-.header .btn {
-  @extend .btn; /* Usa el componente de botones */
-}
 
-.nav-header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 20px;
-}
 
-.nav-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.nav-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
-.nav-header .nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-header .nav-menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
 
 .main-header {
   background-color: variables.$primary-color;
@@ -87,10 +54,4 @@
   margin: 0;
 }
 
-.nav-bar .btn {
-  @extend .btn; /* Usa el componente de botones */
-}
 
-.main-content {
-  padding-top: 80px; /* Añade un margen superior para evitar que el contenido quede oculto detrás del header */
-}

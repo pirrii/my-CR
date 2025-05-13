@@ -41,81 +41,12 @@ p {
   text-align: justify center; // Justifica el texto para una apariencia más elegante
   max-width: 800px; // Ancho máximo para evitar líneas demasiado largas
 }
-
-.index {
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color: variables.$colorfondo;
-  border-radius: variables.$border-radius;
-  box-shadow: variables.$box-shadow;
-}
-
-.about {
-  background-color: variables.$secondary-color;
-  padding: variables.$padding-large variables.$padding-base;
-}
-
-.about .highlight {
-  color: variables.$primary-color;
-}
-
-.about-content {
-  display: flex;
-  gap: variables.$padding-large;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra horizontalmente el contenido */
   padding: variables.$padding-base;
 }
-
-.image-section {
-  flex: 1;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente la imagen */
-}
-
-.image-section img {
-  max-width: 80%; /* Ajusta el tamaño de la imagen */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar la imagen */
-}
-
-.text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente el texto */
-  gap: 20px; /* Espaciado entre los elementos de texto */
-}
-
-.text-section .btn {
-  align-self: flex-start; /* Alinea el botón al inicio del texto */
-  padding: 12px 25px; /* Tamaño del botón */
-  background-color: #b22222; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 1rem; /* Tamaño del texto del botón */
-  font-weight: bold; /* Texto en negrita */
-  transition: background-color 0.3s ease; /* Transición para el hover */
-}
-
-.text-section .btn:hover {
-  background-color: #8b0000; /* Color más oscuro al pasar el cursor */
-}
-
 .skills {
   h3 {
     text-align: center;

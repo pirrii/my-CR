@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.footer {
+  background-color: #333;
+  color: #cccccc;
+  padding: 32px;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 3px solid #f14a4a;
+}
+.footer .footer-links {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer .footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.footer .footer-links a:hover {
+  color: #f14a4a;
+}
+.footer .footer-text {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 8px auto; /* Espaciado superior e inferior y centrado automático */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  color: #cccccc; /* Color del texto */
+  max-width: 800px; /* Opcional: Limita el ancho del texto */
+}
+
+/*# sourceMappingURL=footer.css.map */
