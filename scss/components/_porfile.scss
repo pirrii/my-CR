@@ -1,15 +1,29 @@
 @use '../base/variables' as *; // Importa variables de SCSS
+
 .profile-photo {
-  max-width: 150px; /* Tamaño máximo */
+  width: 100%;
+  max-width: 150px; /* Tamaño máximo en escritorio */
   border-radius: 50%; /* Forma circular */
-  box-shadow: $box-shadow; /* Sombra definida en variables */
-  margin: $padding-base auto; /* Centrado */
-  display: block; /* Asegura que se comporte como un bloque */
-  border: 3px solid $primary-color; /* Borde de color principal */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  box-shadow: $box-shadow;
+  margin: $padding-base auto;
+  display: block;
+  border: 3px solid $primary-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .profile-photo {
+    max-width: 100px; // Más pequeña en móviles
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-photo {
+    max-width: 70px; // Más pequeña en pantallas muy pequeñas
+  }
 }
 
 .profile-photo:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
