@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.btn, .header .btn, .nav-bar .btn {
+.btn {
   background: linear-gradient(to bottom, #f14a4a, rgb(238.7384615385, 44.7615384615, 44.7615384615)); /* Rojo degradado */
   color: #cccccc; /* Texto blanco */
   border: none;
@@ -39,10 +39,6 @@
   margin: 8px 0; /* Espaciado superior e inferior */
 }
 
-.header .btn {
-  /* Usa el componente de botones */
-}
-
 .main-header {
   background-color: #f14a4a;
   padding: 15px 20px; /* Más grueso */
@@ -62,14 +58,6 @@
 
 .nav-bar li {
   margin: 0;
-}
-
-.nav-bar .btn {
-  /* Usa el componente de botones */
-}
-
-.main-content {
-  padding-top: 80px; /* Añade un margen superior para evitar que el contenido quede oculto detrás del header */
 }
 
 /*# sourceMappingURL=header.css.map */

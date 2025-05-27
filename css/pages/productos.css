@@ -1,0 +1,225 @@
+.blog-header-logo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 32px 0 8px 0;
+  letter-spacing: 1px;
+}
+
+.blog-header-sub {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.blog-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: #f8f8f8;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0;
+}
+.blog-nav a {
+  color: #f14a4a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.blog-nav a:hover, .blog-nav a.active {
+  background: #f14a4a;
+  color: #fff;
+}
+
+.blog-banner {
+  background: #fff8f0;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+.blog-banner form {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.blog-banner form input[type=email] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.blog-banner form button {
+  background: #f14a4a;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.blog-banner form button:hover {
+  background: #d12b2b;
+}
+
+.blog-list {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.blog-post-card {
+  display: flex;
+  gap: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
+  overflow: hidden;
+  align-items: stretch;
+}
+.blog-post-card .blog-post-img {
+  width: 260px;
+  min-width: 180px;
+  object-fit: cover;
+  background: #eee;
+  display: block;
+  height: 180px;
+}
+.blog-post-card .blog-post-content {
+  flex: 1;
+  padding: 18px 18px 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-post-card .blog-post-content h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  color: #f14a4a;
+}
+.blog-post-card .blog-post-content .meta {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+.blog-post-card .blog-post-content p {
+  margin-bottom: 12px;
+}
+.blog-post-card .blog-post-content .btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.row.mt-4 {
+  margin-top: 32px;
+}
+
+.col-md-4 {
+  flex: 1 1 300px;
+  max-width: 350px;
+  margin: 0 auto 32px auto;
+  display: flex;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.card .card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  flex: 1;
+}
+.card .card-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+}
+.card .card-text {
+  color: #7f8c8d;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  flex: 1;
+  text-align: center;
+}
+.card .btn-primary {
+  background-color: #659231;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: background 0.2s;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .blog-post-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .blog-post-card .blog-post-img {
+    width: 100%;
+    height: 160px;
+  }
+  .blog-post-card .blog-post-content {
+    padding: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .col-md-4 {
+    max-width: 100%;
+  }
+  .card .card-img-top {
+    height: 220px;
+  }
+}
+
+/*# sourceMappingURL=productos.css.map */
